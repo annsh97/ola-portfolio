@@ -1,0 +1,154 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  text-align: center;
+  color: black;
+  font-size: 1.6rem;
+  margin-top: 100px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  list-style: none;
+  text-transform: none;
+  text-align: center;
+}
+
+.container {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid crimson;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+}
+.container:hover {
+  color: white;
+  background-color: crimson;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-width: 1300px;
+  padding: 0 10px;
+}
+.navbar-menu ul {
+  list-style: none;
+  position: absolute;
+  background-color: rgb(31, 30, 30);
+  width: 100vw;
+  height: 100vh;
+  left: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s ease left;
+}
+
+.navbar-menu ul a {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  display: block;
+}
+.navbar-menu ul a::after {
+  content: attr(data-after);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: rgba(240, 248, 255, 0.021);
+  font-size: 13rem;
+  letter-spacing: 50px;
+  z-index: -1;
+  transition: 0.3s ease letter-spacing;
+}
+.navbar-menu ul li:hover a::after {
+  transform: translate(-50%, -50%) scale(1);
+  letter-spacing: initial;
+}
+.navbar-menu ul li:hover a {
+  color: crimson;
+}
+.home-greeting {
+  color: black;
+
+  margin-top: 100px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  list-style: none;
+  text-transform: none;
+}
+.greetings {
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  margin-top: 100px;
+  font-weight: 200;
+  letter-spacing: 0.05rem;
+
+  text-transform: none;
+}
+.name {
+  font-size: 3rem;
+  margin-inline: 100px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+
+  margin-top: 40px;
+
+  font-weight: 200;
+  letter-spacing: 0.05rem;
+
+  text-transform: none;
+}
+.welcome {
+  font-size: 2rem;
+  margin-inline: 200px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+
+  margin-top: 40px;
+
+  font-weight: 200;
+  letter-spacing: 0.05rem;
+
+  text-transform: none;
+}
